@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="12grid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Spotify</title>
 </head>
@@ -17,6 +20,18 @@
             <nav class="big-nav">
             </nav>
             <nav class="small-nav">
+                <div class="small-nav--top">
+                    <img src="img/logo-small.svg" alt="">
+                    <img src="img/home.svg" alt="">
+                    <img src="img/search.svg" alt="">
+                    <img src="img/libreria.svg" alt="">
+                </div>
+                <div class="small-nav--bottom">
+                    <img src="img/download.svg" alt="">
+                    <img id="profile-color" src="img/profile.svg" alt="">
+                </div>
+
+
             </nav>
             <div class="right">
                 <div class="right-top">
@@ -109,9 +124,44 @@
                         </div>
                     </div>
                 </section>
+                <!-- third row -->
+                <section>
+                    <h2>
+                        Artisti piu popolari
+                    </h2>
+                    <p>
+                        Piu ascolti, piu accurati saranno i suggerimenti.
+                    </p>
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="img">
+                                <img src="img/youg.jpeg" alt="">
+                            </div>
+                            <h3>Lana del Rey</h3>
+                        </div>
+                        <div class="col-2">
+                            <div class="img">
+                                <img src="img/einaudi.jpeg" alt="">
+                            </div>
+                            <h3>Ludovico Einaudi</h3>
+                        </div>
+                    </div>
+                </section>
+                <div class="blue">
+                    <img src="img/search.svg" alt="">
+                </div>
             </div>
         </main>
         <footer>
+            <div class="artist">
+
+            </div>
+            <div class="player">
+
+            </div>
+            <div class="volume">
+
+            </div>
         </footer>
     </div>
 </body>
