@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+.wrap {
+    max-width: 1600spx;
+    margin: 0 auto;
+}
+
 main {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 70px);
     display: flex;
 }
 
@@ -16,36 +21,43 @@ nav {
 
 .right {
     width: calc(100% - 250px);
-    background-color: rgb(95, 122, 172);
+    background-color: rgb(50, 56, 66);
 }
 
 .right-top {
-    background-color: rgb(37, 134, 61);
+    background-color: rgb(39, 40, 39);
     height: 70px;
-    width: 100%;
-    position: fixed;
-    z-index: 8;
+    text-align: right;
+    line-height: 70px;
+
 }
 
 .right-top>button {
     color: white;
     background-color: rgb(8, 11, 18);
-    width: 15%;
-    font-size: 12px;
+    font-size: 11px;
+    padding: 10px 0px;
     font-weight: 600;
-    padding: 10px;
+    width: 200px;
     border: 1px solid white;
     border-radius: 20px;
 }
 
-.right-bottom {
-    height: 100%;
-    overflow: scroll;
-    padding-left: 70px;
+.right>ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px 25px;
+    list-style-type: none;
+    color: gray;
+    margin: 20px 0px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 
 footer {
     height: 70px;
     background-color: rgb(40, 40, 40);
+    position: sticky;
 }
