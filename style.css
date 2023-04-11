@@ -14,8 +14,14 @@ main {
     display: flex;
 }
 
-nav {
+.big-nav {
     width: 250px;
+    background-color: rgb(0, 0, 0);
+}
+
+.small-nav {
+    display: none;
+    width: 50px;
     background-color: rgb(0, 0, 0);
 }
 
@@ -73,11 +79,12 @@ section>h2 {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px 10px;
+    margin: 25px 0px;
 }
 
 .col-2 {
     flex-basis: calc((100% / 12) * 2 - 10px);
-    max-width: calc((100% / 12) * 2);
+    max-width: calc((100% / 12) * 2 - 10px);
     text-align: center;
 }
 
@@ -87,11 +94,14 @@ section>h2 {
 
 .col-2 h3 {
     padding: 8px 0px;
+    line-height: 19px;
+    font-size: 17px;
 }
 
-.col-2 p {
+p {
     color: gray;
     font-weight: bold;
+    font-size: 14px;
 }
 
 footer {
@@ -99,3 +109,39 @@ footer {
     background-color: rgb(40, 40, 40);
     position: sticky;
 }
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 878px) {
+    [class*="col-"] {
+        flex-basis: calc((100% / 12) * 3 - 10px);
+        max-width: calc((100% / 12) * 3 - 10px);
+    }
+}
+
+@media screen and (max-width: 639px) {
+    [class*="col-"] {
+        flex-basis: calc((100% / 12) * 6 - 10px);
+        max-width: calc((100% / 12) * 6 - 10px);
+    }
+}
+
+@media screen and (max-width: 552px) {
+    [class*="col-"] {
+        flex-basis: calc((100% / 12) * 6 - 10px);
+        max-width: calc((100% / 12) * 6 - 10px);
+    }
+
+    .big-nav {
+        display: none;
+    }
+
+    .small-nav {
+        display: block;
+    }
+
+    .right {
+        width: calc(100% - 50px);
+    }
