@@ -316,10 +316,6 @@ li:hover,
     color: white;
 }
 
-button:hover {
-    padding: 13px 5px;
-    width: 220px;
-}
 
 #circle-play:hover {
     font-size: 25px;
