@@ -133,12 +133,13 @@ ul {
 .right-top {
     background-color: rgb(39, 40, 39);
     height: 70px;
-    text-align: right;
-    line-height: 70px;
-
+    padding-right: 2rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
 }
 
-.right-top>button {
+.right-top>div>button {
     color: white;
     background-color: rgb(8, 11, 18);
     font-size: 11px;
